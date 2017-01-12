@@ -175,7 +175,7 @@ function playVideo(url){
   console.info(video);
   console.info("--------------------------");
   // update the video info & highlight playlist
-  $('.video-info').html('NOW WATCHING: ' + video.title);
+  $('#video-title').text(video.title);
   $(".active-btn").removeClass("active-btn");
   // Get all the playlist buttons & check which one has a matching name
   var playlist_btn_array = document.querySelectorAll(".playlist-btn");
